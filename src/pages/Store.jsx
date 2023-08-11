@@ -18,7 +18,7 @@ export const Store = () => {
     const handleClick = (obj) => {
         const element = cart.find((e) => e.id === obj.id)
         if (element) {
-            const arrFilter = cart.filter((e) => e.id !== obj.id)
+            const arrFilter = cart.filter((e) => e.id !== obj.id);
             setCart(arrFilter)
         } else {
             setCart([...cart, obj])
