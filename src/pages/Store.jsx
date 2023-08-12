@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { BsFillCartCheckFill, BsFillCartPlusFill } from 'react-icons/bs'
+import { setItem, getItem } from "../services/localStorageFuncs";
+import { Link } from 'react-router-dom'
+import { ProductsArea } from "../css/styles";
+import { Header } from "../components/Header";
+
 
 export const Store = () => {
     const [data, setData] = useState([])
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState(getItem('carrinhoYt') || [])
     console.log(data)
     useEffect(() => {
         const fetchApi = async () => {
@@ -20,23 +25,27 @@ export const Store = () => {
         if (element) {
             const arrFilter = cart.filter((e) => e.id !== obj.id);
             setCart(arrFilter)
+            setItem('carrinhoYt', arrFilter)
+
         } else {
             setCart([...cart, obj])
+            setItem('carrinhoYt', [...cart, obj])
         }
 
     }
 
     return (
         <div>
-            <h1>STORE</h1>
-            <div>
+            <Header />
+
+            <ProductsArea>
                 {
                     data.map((e) => (
                         <div key={e.id}>
                             <h4>{e.title}</h4>
                             <img src={e.thumbnail} alt="" />
                             <h4>{e.price}</h4>
-                            <button onClick={()=>handleClick(e)} >
+                            <button onClick={() => handleClick(e)} >
                                 {
                                     cart.some((itemCart) => itemCart.id === e.id) ? (
                                         <BsFillCartCheckFill />)
@@ -49,7 +58,7 @@ export const Store = () => {
 
                     ))
                 }
-            </div>
+            </ProductsArea>
         </div>
     )
 }
