@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { getItem, setItem } from "../services/localStorageFuncs"
 import { BsFillCartDashFill } from 'react-icons/bs'
-import { styled } from "styled-components"
 import { ProductsArea } from "../css/styles"
 import { Header } from "../components/Header"
 
