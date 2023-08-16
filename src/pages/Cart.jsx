@@ -14,10 +14,12 @@ export const Cart = () => {
         setItem('carrinhoYt', arrFilter)
     }
 
+    const subTotal = data.reduce((acc, cur)=> acc + cur.price , 0)
+
     return (
         <div>
             <Header />
-
+            <h3>{`Sub Total: R$${subTotal}`}</h3>
             <ProductsArea>
 
                 {
@@ -25,7 +27,7 @@ export const Cart = () => {
                         <div key={e.id}>
                             <h4>{e.title}</h4>
                             <img src={e.thumbnail} alt={e.title} />
-                            <h4>{e.price}</h4>
+                            <h4>{`R$ ${e.price}`}</h4>
                             <button
                                 onClick={() => removeItem(e)}
                             >

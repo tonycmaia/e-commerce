@@ -43,7 +43,7 @@ export const Store = () => {
                         <div key={e.id}>
                             <h4>{e.title}</h4>
                             <img src={e.thumbnail} alt="" />
-                            <h4>{e.price}</h4>
+                            <h4>{`R$ ${e.price}`}</h4>
                             <button onClick={() => handleClick(e)} >
                                 {
                                     cart.some((itemCart) => itemCart.id === e.id) ? (

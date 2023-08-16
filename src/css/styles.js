@@ -6,6 +6,8 @@ export const ProductsArea = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 70px;
+    margin-top: 30px;
 
     div{
         height: 320px;
