@@ -35,7 +35,6 @@ export const Store = () => {
 
     return (
         <div>
-            <Header />
 
             <ProductsArea>
                 {

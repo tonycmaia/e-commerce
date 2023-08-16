@@ -27,12 +27,12 @@ const HeaderArea = styled.div`
 `
 
 export const Header = () => {
-    const user = getItem('usuario')
+
     return (
         <HeaderArea>
             <Link to='/' >Store</Link>
             <Link to='/cart' >Carrinho</Link>
-            <Link>{}</Link>
+            <Link to='/profile' >My Profile</Link>
         </HeaderArea>
     )
 }
