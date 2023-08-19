@@ -13,10 +13,14 @@ export const Profile = (props) => {
 
     return (
         <div>
-            <p>{user.name}</p>
+            <p>Nome:{user.name}</p>
+            <p>E-mail:{user.email}</p>
+            <p>CPF:{user.cpf}</p>
+            <img sizes="40" src={user.img} alt={user.name} />
+            <br />
+            <br />
             <button
                 onClick={toProfileEdit}
-
             >
                 Edit Profile
             </button>

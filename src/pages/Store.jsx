@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { BsFillCartCheckFill, BsFillCartPlusFill } from 'react-icons/bs'
 import { setItem, getItem } from "../services/localStorageFuncs";
 import { ProductsArea } from "../css/styles";
-import { Header } from "../components/Header";
 
 
 export const Store = () => {

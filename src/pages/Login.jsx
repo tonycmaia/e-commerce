@@ -1,38 +1,45 @@
 import React, { useState } from "react";
-import { setItem } from "../services/localStorageFuncs";
+import { setItem, getItem } from "../services/localStorageFuncs";
 
-export const Login = (props)=>{
-    const [name, setName] = useState('')
-    const [pass, setPass] = useState('')
-        
+export const Login = (props) => {
+    const user = getItem('usuario')
+
+    const [name, setName] = useState(user.name || '')
+    const [pass, setPass] = useState(user.pass || '')
+
 
     const cond = (name.length > 3 && pass.length > 5)
 
-    const saveUser = (name, pass)=>{
-        setItem('usuario',{name, pass})
-        const { history: {push}} = props;
+    const saveUser = (name, pass) => {
+        const { history: { push } } = props;
+        if (name === user.name && pass === user.pass) {
+            push('/store')
+            return;
+        }
+
+        setItem('usuario', { name, pass })
         push('/store')
     }
 
     return (
         <div>
             <p>Nome</p>
-            <input 
-            type="text"
-            onChange={({target:{value}})=> setName(value)}
-            value={name}
+            <input
+                type="text"
+                onChange={({ target: { value } }) => setName(value)}
+                value={name}
             />
             <p>Password</p>
-            <input 
-            type="password"
-            onChange={({target:{value}})=> setPass(value)}
-            value={pass} />
+            <input
+                type="password"
+                onChange={({ target: { value } }) => setPass(value)}
+                value={pass} />
             <br />
             <br />
             <button
-            type="button"
-            onClick={()=> saveUser(name, pass)}
-            disabled={ !cond }>
+                type="button"
+                onClick={() => saveUser(name, pass)}
+                disabled={!cond}>
                 Sing in
             </button>
         </div>

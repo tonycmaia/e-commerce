@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import { styled } from "styled-components";
-import { getItem } from "../services/localStorageFuncs";
+
 
 const HeaderArea = styled.div`
     display: flex;
@@ -27,13 +27,12 @@ const HeaderArea = styled.div`
 `
 
 export const Header = () => {
-    const cond = getItem('usuario')
 
     return (
         <HeaderArea>
-            <Link to='/' >Store</Link>
+            <Link to='/store' >Store</Link>
             <Link to='/cart' >Carrinho</Link>
-            <Link to={( (cond.name === '') ?'': '/profile') }>My Profile</Link>
+            <Link to='/profile'>My Profile</Link>
         </HeaderArea>
     )
 }
