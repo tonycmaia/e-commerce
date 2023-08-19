@@ -41,6 +41,12 @@ export const ProfileEdit = () => {
                 value={cpf}
                 onChange={({ target: { value } }) => setCpf(value)}
             />
+            <br /> <br /> <br />
+            <button
+                disabled={cond}
+            >
+                Save
+            </button>
 
 
         </div>

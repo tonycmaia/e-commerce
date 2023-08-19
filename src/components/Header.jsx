@@ -27,12 +27,13 @@ const HeaderArea = styled.div`
 `
 
 export const Header = () => {
+    const cond = getItem('usuario')
 
     return (
         <HeaderArea>
             <Link to='/' >Store</Link>
             <Link to='/cart' >Carrinho</Link>
-            <Link to='/profile' >My Profile</Link>
+            <Link to={( (cond.name === '') ?'': '/profile') }>My Profile</Link>
         </HeaderArea>
     )
 }
