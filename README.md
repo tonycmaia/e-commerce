@@ -1,1 +1,2 @@
-Parei em: https://youtu.be/B3HfMVdhpCs?t=1672
+Parei em: https://www.youtube.com/watch?v=b1daSxf_FBM
+https://youtu.be/b1daSxf_FBM
