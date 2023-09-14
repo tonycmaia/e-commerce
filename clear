@@ -1,0 +1,77 @@
+[33mcommit 36bea3bd2f2b4aae5e63f3dedba1ea665821f4da[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: tonycmaia <tonycmaia@gmail.com>
+Date:   Sun Aug 20 10:13:16 2023 -0300
+
+    validacao login
+
+[33mcommit da5e072744a235417fda82c5430b530a689e6371[m
+Author: tonycmaia <tonycmaia@gmail.com>
+Date:   Sat Aug 19 20:38:56 2023 -0300
+
+    profile edit part 2
+
+[33mcommit 20ce230e649837b306276a3851791629cc420273[m
+Author: tonycmaia <tonycmaia@gmail.com>
+Date:   Sat Aug 19 16:06:30 2023 -0300
+
+    profile edit
+
+[33mcommit 774efbc84af569415d81a91273ed7f62258932b4[m
+Author: tonycmaia <tonycmaia@gmail.com>
+Date:   Wed Aug 16 17:47:45 2023 -0300
+
+    edit profile page
+
+[33mcommit db408fd723db1d8c56915cb9e470b7eb592cef2b[m
+Author: tonycmaia <tonycmaia@gmail.com>
+Date:   Wed Aug 16 00:18:26 2023 -0300
+
+    criando login
+
+[33mcommit 095a9c3c0982ef8928b3f6044050c664d57a627d[m
+Author: tonycmaia <tonycmaia@gmail.com>
+Date:   Tue Aug 15 23:07:03 2023 -0300
+
+    Finalizando parte 1
+
+[33mcommit 0f99b8bcff72d138bde5903ea47cc85b85a5f25b[m
+Author: tonycmaia <tonycmaia@gmail.com>
+Date:   Sat Aug 12 02:10:39 2023 -0300
+
+    components header and cart
+
+[33mcommit 324a55ec23ae697bd53fbd650edd5abb78423598[m
+Author: tonycmaia <tonycmaia@gmail.com>
+Date:   Sat Aug 12 02:07:48 2023 -0300
+
+    components header and cart
+
+[33mcommit abc8d2a3273c90a85c6c24fd7ad37114296b2241[m
+Author: Tony Maia <124622421+tonycmaia@users.noreply.github.com>
+Date:   Fri Aug 11 19:31:39 2023 -0300
+
+    Update Store.jsx ;
+
+[33mcommit e8e6501417960eb831c5386ff2005a5aa1c957a6[m
+Author: tonycmaia <tonycmaia@gmail.com>
+Date:   Fri Aug 11 01:05:14 2023 -0300
+
+    Fix Store.jsx
+
+[33mcommit 7d880facb0f2d08672ab05452862f2e3f6dd3395[m
+Author: tonycmaia <tonycmaia@gmail.com>
+Date:   Thu Aug 10 18:49:40 2023 -0300
+
+    second commit
+
+[33mcommit 170649c572207760a80245a74b395694d0bc4a6d[m
+Author: tonycmaia <tonycmaia@gmail.com>
+Date:   Thu Aug 10 17:47:57 2023 -0300
+
+    First commit
+
+[33mcommit 8c09c1955d1c2d5fa6856aebc1f7a008df53af6a[m
+Author: tonycmaia <tonycmaia@gmail.com>
+Date:   Thu Aug 10 16:51:41 2023 -0300
+
+    Initialize project using Create React App

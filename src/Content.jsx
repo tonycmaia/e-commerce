@@ -5,11 +5,13 @@ import { Cart } from "./pages/Cart";
 import { Login } from "./pages/Login";
 import { Profile } from "./pages/Profile";
 import { ProfileEdit } from "./pages/ProfileEdit";
+import { Payment } from "./pages/Payment";
 
 
 export const Content = () => {
     return (
         <Switch>
+            <Route exact path='/payment/:price' component={Payment} />
             <Route exact path='/profile/edit' component={ProfileEdit} />
             <Route exact path='/profile' component={Profile} />
             <Route exact path='/cart' component={Cart} />
