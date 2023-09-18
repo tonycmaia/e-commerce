@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { getItem, setItem } from "../services/localStorageFuncs"
+import { getItem } from "../services/localStorageFuncs"
 import { AiFillCheckCircle } from "react-icons/ai"
 import styled from "styled-components"
 import { Loading } from "../components/Loading"
