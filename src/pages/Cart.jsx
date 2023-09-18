@@ -20,13 +20,15 @@ export const Cart = (props) => {
         setItem('carrinhoYt', [])
     }
 
+    const user = getItem('usuario')
+
 
 
     const subTotal = data.reduce((acc, cur) => acc + cur.price, 0)
 
     return (
         <div>
-
+            <div style={{ display: 'flex', width: '95%', justifyContent: 'flex-end' }}><h4>{`Saldo na carteira: R$${user.saldo}`}</h4></div>
             <h3>{`Sub Total: R$${subTotal}`}</h3>
             <ProductsArea>
 

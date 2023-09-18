@@ -9,6 +9,7 @@ export const ProfileEdit = (props) => {
     const [pass, setPass] = useState(user.pass || '')
     const [img, setImg] = useState(user.img || '')
     const [cpf, setCpf] = useState(user.cpf || '')
+    const [saldo, setSaldo] = useState(user.saldo || '')
 
     const cond = (
         name.length > 3 && (email.includes("@") && email.length > 5)
@@ -16,7 +17,7 @@ export const ProfileEdit = (props) => {
     )
 
     const saveChanges = () => {
-        setItem('usuario', { name, email, pass, img, cpf })
+        setItem('usuario', { name, email, pass, img, cpf, saldo })
         const { history: { push } } = props;
         push('/profile')
     }
@@ -53,6 +54,13 @@ export const ProfileEdit = (props) => {
                 value={cpf}
                 onChange={({ target: { value } }) => setCpf(value)}
             />
+
+            <p>Saldo: {user.saldo}</p>
+            <input type="number"
+                value={saldo}
+                onChange={({ target: { value } }) => setSaldo(value)}
+            />
+
             <br /> <br /> <br />
             <button
                 onClick={saveChanges}
