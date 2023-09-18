@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { setItem, getItem } from "../services/localStorageFuncs";
 
 export const Login = (props) => {
+
     const user = getItem('usuario')
 
-    const [name, setName] = useState(user.name || '')
-    const [pass, setPass] = useState(user.pass || '')
+    const [name, setName] = useState(user?.name || '')
+    const [pass, setPass] = useState(user?.pass || '')
     const [passIncorrect, setPassIncorrect] = useState(false)
 
 
